@@ -1,0 +1,19 @@
+---
+name: Class-Light
+version: 0.0100
+author:
+  - Christopher Davaz         www.chrisdavaz.com          cdavaz@gmail.com
+abstract: Provides cascading object initialization and autovivified accessors and mutators
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+build_requires:
+  Test::More: 0
+provides:
+  Class::Light:
+    file: lib/Class/Light.pm
+    version: 0.0100
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
