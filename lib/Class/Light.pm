@@ -1,5 +1,5 @@
 package Class::Light;
-# Copyright (c) 2008 Christopher Davaz. All rights reserved.
+# Copyright (c) 2009 Christopher Davaz. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -10,7 +10,7 @@ use warnings;
 use vars qw($VERSION);
 use Carp;
 
-$VERSION = "0.0100";
+$VERSION = "0.01002";
 
 sub new {
 	my $class = shift;
@@ -169,7 +169,7 @@ Christopher Davaz         www.chrisdavaz.com          cdavaz@gmail.com
 
 =head1 VERSION
 
-Version 0.1 (Jun 5 2008)
+Version 0.01002 (Apr 25 2009)
 
 =head1 SEE ALSO
 
