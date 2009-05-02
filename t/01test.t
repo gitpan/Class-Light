@@ -30,4 +30,3 @@ $obj->set_data(42);
 is($obj->getData, 42, "set_data form of mutator works");
 $obj->set_Data(88);
 is($obj->getData, 88, "set_Data form of mutator works");
-

@@ -10,7 +10,7 @@ use warnings;
 use vars qw($VERSION);
 use Carp;
 
-$VERSION = "0.01002";
+$VERSION = "0.01003";
 
 sub new {
 	my $class = shift;
@@ -47,7 +47,11 @@ our $AUTOLOAD;
 sub AUTOLOAD {
 	my ($pkg, $method) = ($AUTOLOAD =~ /(.+)::(.+)/);
 	my ($type, $attr)  = ($method   =~ /^(get|set)_?(.*)/);
-	my $origAttr       = $attr;
+
+	# We only handle methods that match the pattern /^(get|set)_?(.*)/
+	croak "Unknown method: $AUTOLOAD" unless $type && $attr;
+
+	my $origAttr = $attr;
 	$attr = lcfirst $attr;
 
 	# Don't allow calls such as "getattr", see documentation for details.
@@ -169,7 +173,7 @@ Christopher Davaz         www.chrisdavaz.com          cdavaz@gmail.com
 
 =head1 VERSION
 
-Version 0.01002 (Apr 25 2009)
+Version 0.01003 (Apr 25 2009)
 
 =head1 SEE ALSO
 
